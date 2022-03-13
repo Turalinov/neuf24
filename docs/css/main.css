@@ -347,8 +347,22 @@ template {
 @font-face {
   font-family: Gilroy;
   font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 :root {
@@ -368,7 +382,7 @@ body {
 
 body {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -501,21 +515,27 @@ img {
 }
 
 button {
-  text-align: center;
   border: none;
   background: transparent;
   cursor: pointer;
 }
 .btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 600;
   text-align: center;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   border: 1px solid #86F2E7;
   border-radius: 10px;
   padding: 15px 25px;
   color: #86F2E7;
   background-color: transparent;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 12px;
+  }
 }
 .btn:hover {
   color: #86F2E7;
@@ -539,6 +559,18 @@ button {
   right: 0;
   z-index: 10;
   transition: background-color 0.8s;
+}
+@media screen and (max-width: 768px) {
+  .header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F2431;
+    z-index: 30;
+  }
 }
 
 .header.is-active {
@@ -619,6 +651,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .estate {
+    text-align: center;
     padding: 114px 0px 238px;
   }
 }
@@ -633,7 +666,7 @@ button {
 }
 
 .estate__location {
-  display: inline-block;
+  display: block;
   font-size: 20px;
   padding-left: 33px;
   position: relative;
@@ -641,7 +674,10 @@ button {
 }
 @media screen and (max-width: 768px) {
   .estate__location {
-    margin: 0 auto;
+    font-size: 12px;
+    max-width: 135px;
+    padding-left: 25px;
+    margin: 0 auto 32px;
   }
 }
 .estate__location::before {
@@ -657,6 +693,12 @@ button {
   background-position: center;
   background-size: contain;
 }
+@media screen and (max-width: 768px) {
+  .estate__location::before {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .estate__title {
   color: inherit;
@@ -665,17 +707,34 @@ button {
   line-height: 1;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 768px) {
+  .estate__title {
+    max-width: 275px;
+    margin: 0 auto 15px;
+  }
+}
 
 .estate__desc {
   max-width: 485px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .estate__desc {
+    font-size: 12px;
+    max-width: 260px;
+    margin: 0 auto 35px;
+  }
+}
 
 .estate__btn {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
   margin-bottom: 51px;
+}
+@media screen and (max-width: 768px) {
+  .estate__btn {
+    max-width: 278px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .facts__list {
@@ -683,23 +742,53 @@ button {
   align-items: center;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .facts__list {
+    justify-content: center;
+  }
+}
+
 .facts__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .facts__item {
+    align-items: center;
+  }
+}
+
 .facts__item + .facts__item {
   margin-left: 40px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .facts__item + .facts__item {
+    margin-left: 33px;
+  }
+}
+
 .facts__accent {
   font-size: 25px;
 }
+@media screen and (max-width: 768px) {
+  .facts__accent {
+    font-size: 18px;
+  }
+}
+
 .facts__something {
   font-size: 14px;
   opacity: 0.6;
 }
+@media screen and (max-width: 768px) {
+  .facts__something {
+    font-size: 10px;
+  }
+}
+
 .facts__more {
   margin-left: 5px;
   color: #86F2E7;
@@ -711,6 +800,11 @@ button {
   position: relative;
   z-index: 1;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .first-screen {
+    min-height: 700px;
+  }
 }
 
 .first-screen__bg {
@@ -728,7 +822,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .first-screen__bg {
-    display: none;
+    width: 364.3333333333px;
+    height: 255.6666666667px;
+    top: initial;
+    bottom: 0;
+    left: initial;
+    right: 0;
   }
 }
 
