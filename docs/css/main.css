@@ -658,6 +658,7 @@ button {
 
 .estate .container {
   padding-left: 130px;
+  position: relative;
 }
 @media screen and (max-width: 1230px) {
   .estate .container {
@@ -734,6 +735,25 @@ button {
     max-width: 278px;
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+.estate__play {
+  position: absolute;
+  right: calc(50% - 300px);
+  top: 44px;
+}
+@media screen and (max-width: 992px) {
+  .estate__play {
+    right: calc(50% - 350px);
+    top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .estate__play {
+    top: initial;
+    bottom: -130px;
+    right: calc(50% - 40px);
   }
 }
 
@@ -829,6 +849,10 @@ button {
     left: initial;
     right: 0;
   }
+}
+
+.first-screen__play {
+  position: absolute;
 }
 
 .menu {
@@ -1109,6 +1133,68 @@ button {
 @media screen and (max-width: 768px) {
   .message__close {
     display: none;
+  }
+}
+
+.play {
+  width: 118px;
+  height: 118px;
+}
+@media screen and (max-width: 992px) {
+  .play {
+    width: 95px;
+    height: 95px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .play {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.play__text {
+  position: absolute;
+  top: 71px;
+  left: -111px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.46);
+  pointer-events: none;
+}
+@media screen and (max-width: 992px) {
+  .play__text {
+    top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .play__text {
+    top: -13px;
+    left: -95px;
+    font-size: 10px;
+  }
+}
+
+.play__link::before {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: -40px;
+  width: 38px;
+  height: 9px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (max-width: 992px) {
+  .play__link::before {
+    top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .play__link::before {
+    top: -2px;
+    transform: rotate(197deg);
   }
 }
 
