@@ -855,124 +855,54 @@ button {
   position: absolute;
 }
 
+.free {
+  padding: 100px 0 20px;
+}
+
 .free__title {
+  text-align: center;
   margin-bottom: 50px;
 }
 
-.free__block {
-  display: flex;
-  background-color: #EEFAFF;
-  border-radius: 30px;
-  overflow: hidden;
-  min-height: 542px;
+.free__subtitle {
+  margin-bottom: 5px;
 }
 
-.free__elem {
-  flex: 1 1 50%;
+.free__desc {
+  margin-bottom: 40px;
+}
+
+.free__list {
+  max-width: 385px;
+  margin-bottom: 40px;
+}
+
+.free__item {
+  padding-left: 35px;
+}
+
+.free__item + .free__item {
+  margin-top: 25px;
+}
+
+.free__block {
+  background-color: #EEFAFF;
+  border-radius: 30px;
+  min-height: 542px;
+  overflow: hidden;
+  padding: 78px 90px;
+  position: relative;
 }
 
 .free__wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.free__wrap svg {
   width: 100%;
   height: 100%;
-  clip-path: polygon(17% -9%, 100% 0%, 100% 100%, 0% 105%);
-}
-
-.free__img {
-  position: relative;
-  width: 687px;
-  height: 541px;
-}
-
-.free__img-elem {
-  object-fit: cover;
-  width: 100%;
-}
-
-.free__way {
-  position: absolute;
-  top: 185px;
-  left: 94px;
-  width: 489px;
-  height: 288px;
-}
-
-.free__step {
-  position: absolute;
-  z-index: 1;
-  width: 65px;
-  height: 65px;
-  padding: 5px;
-  background-color: #3C48D4;
-  border-radius: 50%;
-}
-.free__step::before {
-  content: "";
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 25px;
-  height: 15px;
-  background-image: url("../img/polygon.svg");
-}
-
-.free__step--first {
-  top: 30px;
-  left: 113px;
-}
-
-.free__step--second {
-  top: -81px;
-  left: 225px;
-}
-
-.free__step--third {
-  top: -81px;
-  left: 378px;
-}
-
-.free__step--fourth {
-  top: 60px;
-  left: 458px;
-}
-
-.free__step--fifth {
-  width: initial;
-  height: 30px;
-  padding: 5px 13px;
-  border-radius: 100px;
-  top: 210px;
-  left: 418px;
-}
-
-.free__step-text {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.free__step-dot {
-  top: 17px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  bottom: -30px;
-  background-color: #3C48D4;
-  border: 4px solid #86F2E7;
-  color: #ffffff;
-}
-.free__step-dot--small {
-  width: 23px;
-  height: 23px;
-}
-
-.free__step--fifth .free__step-dot {
-  top: 30px;
 }
 
 .menu {
