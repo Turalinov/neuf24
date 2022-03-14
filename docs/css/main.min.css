@@ -391,6 +391,11 @@ body {
   color: #1F2431;
   background-color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
 
 body.body--locked {
   overflow: hidden;
@@ -467,6 +472,30 @@ h3 {
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 20px;
+  }
+}
+
+.title span,
+.subtitle span {
+  position: relative;
+  z-index: 0;
+}
+.title span::before,
+.subtitle span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 13px;
+  background: #86F2E7;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .title span::before,
+.subtitle span::before {
+    height: 8px;
   }
 }
 
@@ -858,10 +887,25 @@ button {
 .free {
   padding: 100px 0 20px;
 }
+@media screen and (max-width: 992px) {
+  .free {
+    padding: 50px 0 15px;
+  }
+}
 
 .free__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1235px) {
+  .free__title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .free__title {
+    margin-bottom: 40px;
+  }
 }
 
 .free__subtitle {
@@ -871,27 +915,104 @@ button {
 .free__desc {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1235px) {
+  .free__desc {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .free__desc {
+    margin-bottom: 25px;
+  }
+}
 
 .free__list {
   max-width: 385px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1235px) {
+  .free__list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .free__list {
+    margin-bottom: 25px;
+  }
+}
 
 .free__item {
   padding-left: 35px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .free__item {
+    padding-left: 25px;
+  }
+}
+.free__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .free__item::before {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .free__item + .free__item {
   margin-top: 25px;
 }
+@media screen and (max-width: 1235px) {
+  .free__item + .free__item {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn.btn--colored.free__btn {
+    max-width: 260px;
+    width: 100%;
+  }
+}
 
 .free__block {
   background-color: #EEFAFF;
   border-radius: 30px;
-  min-height: 542px;
   overflow: hidden;
-  padding: 78px 90px;
+  padding: 58px 90px;
   position: relative;
+}
+@media screen and (max-width: 1235px) {
+  .free__block {
+    padding: 30px 90px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .free__block {
+    padding: 30px 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .free__block {
+    padding: 230px 30px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .free__block {
+    border-radius: 15px;
+    padding: 230px 20px 20px;
+  }
 }
 
 .free__wrap {
@@ -899,10 +1020,45 @@ button {
   top: 0;
   right: 0;
 }
+@media screen and (max-width: 1300px) {
+  .free__wrap {
+    right: -60px;
+  }
+}
+@media screen and (max-width: 1235px) {
+  .free__wrap {
+    right: -60px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .free__wrap {
+    right: -110px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .free__wrap {
+    max-height: 448px;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 992px) and (max-width: 992px) {
+  .free__wrap {
+    max-height: 205px;
+  }
+}
 
 .free__wrap svg {
-  width: 100%;
-  height: 100%;
+  width: 860px !important;
+  height: 542px !important;
+  transform: translate3d(30px, 0px, 0px) !important;
+}
+@media screen and (max-width: 1235px) {
+  .free__wrap svg {
+    width: 760px !important;
+    height: 442px !important;
+  }
 }
 
 .menu {
