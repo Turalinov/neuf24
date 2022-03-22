@@ -503,6 +503,15 @@ h3 {
   color: #86F2E7;
 }
 
+h5 {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 14px;
+  }
+}
+
 p {
   margin: 0;
 }
@@ -546,6 +555,83 @@ img {
   }
 }
 
+.accordion__item {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.accordion__control {
+  padding: 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .accordion__control {
+    padding: 20px 0;
+  }
+}
+
+.accordion__title {
+  font-size: 22px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 16px;
+    max-width: 90%;
+  }
+}
+
+.accordion__icon {
+  stroke: #3C48D4;
+  fill: #3C48D4;
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 768px) {
+  .accordion__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.open .accordion__icon {
+  transform: rotate(45deg);
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.open .accordion__content {
+  color: #848484;
+  opacity: 1;
+  padding-bottom: 25px;
+}
+
+.accordion__content p {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__content p {
+    font-size: 12px;
+  }
+}
+
+.accordion__content > p + p {
+  margin-top: 20px;
+}
+
 button {
   border: none;
   background: transparent;
@@ -583,6 +669,227 @@ button {
 }
 .btn--colored:hover {
   color: #1F2431;
+}
+
+.faq {
+  padding: 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 50px 0;
+  }
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .faq__title {
+    margin-bottom: 35px;
+  }
+}
+
+.faq__list.accordion {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #1F2431;
+  padding: 50px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 0 0;
+  }
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 35px;
+  border-bottom: 1.5px solid rgba(146, 146, 146, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__logo.logo {
+    flex-basis: 83px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__logo.logo {
+    display: none;
+  }
+}
+
+.footer__nav {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .footer__nav {
+    flex-basis: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    flex-basis: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 27px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__socials.socials {
+    margin-top: 23px;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__socials.socials {
+    align-self: center;
+  }
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-left: 84px;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-item + .footer__nav-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.footer__nav-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-control {
+    margin-bottom: 15px;
+  }
+}
+
+.footer__nav-title {
+  color: #ffffff;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-title {
+    font-size: 14px;
+  }
+}
+
+.footer__nav-link {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-link {
+    display: block;
+  }
+}
+
+.footer__nav-icon {
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease-out;
+}
+
+.open .footer__nav-icon {
+  transform: rotate(45deg);
+}
+
+.footer__nav-content {
+  font-size: 14px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-content {
+    font-size: 12px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+    box-sizing: content-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .open .footer__nav-content {
+    opacity: 1;
+  }
+}
+
+.footer__nav-content-item + .footer__nav-content-item {
+  margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-content-item + .footer__nav-content-item {
+    margin-top: 10px;
+  }
+}
+
+.footer__nav-content-link {
+  color: #929292;
+}
+
+.footer__bottom {
+  padding: 12px 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 400;
+  color: #929292;
+}
+@media screen and (max-width: 768px) {
+  .footer__bottom {
+    padding: 23px 0 20px;
+  }
+}
+
+.footer__bottom-list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .footer__bottom-list {
+    justify-content: center;
+  }
+}
+
+.footer__bottom-item {
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .footer__bottom-item {
+    font-size: 10px;
+  }
+}
+
+.footer__bottom-item + .footer__bottom-item {
+  margin-left: 39px;
+}
+@media screen and (max-width: 768px) {
+  .footer__bottom-item + .footer__bottom-item {
+    margin-left: 20px;
+  }
+}
+
+.footer__bottom-link {
+  color: #929292;
 }
 
 .header {
@@ -2192,6 +2499,17 @@ button {
   }
 }
 
+.promotion {
+  background-color: #EEFAFF;
+  padding: 35px 0;
+}
+
+.promotion .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 924px;
+}
+
 .reviews {
   padding: 30px 0 55px;
 }
@@ -2221,11 +2539,11 @@ button {
 }
 
 .reviews__item.swiper-slide {
+  transition: 0.4s;
   width: 331px;
   height: 314px;
   border-radius: 15px;
   overflow: hidden;
-  border: 1px solid red;
 }
 @media screen and (max-width: 768px) {
   .reviews__item.swiper-slide {
