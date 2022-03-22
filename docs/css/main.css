@@ -525,7 +525,6 @@ img {
 }
 
 .container {
-  border: 1px solid red;
   margin: 0 auto;
   height: 100%;
   max-width: 1380px;
@@ -1385,23 +1384,24 @@ button {
 }
 
 .neuf {
-  padding: 170px 0 135px;
+  padding: 170px 0 137px;
   overflow: hidden;
   position: relative;
 }
 @media screen and (max-width: 992px) {
   .neuf {
-    padding: 50px 0 350 px;
+    padding: 50px 0 350px;
   }
 }
 @media screen and (max-width: 768px) {
   .neuf {
-    padding: 50px 0 285px;
+    padding: 25px 0 285px;
     text-align: center;
   }
 }
 
 .neuf .container {
+  position: static;
   padding-left: 65px;
 }
 @media screen and (max-width: 768px) {
@@ -1633,6 +1633,32 @@ button {
 
 .opportunities__item--9::before {
   background-image: url("../img/op9.svg");
+}
+
+.partners {
+  padding: 45px 0;
+  background-color: #1F2431;
+}
+@media screen and (max-width: 768px) {
+  .partners {
+    padding: 25px 0;
+  }
+}
+
+.partners__slider.swiper {
+  overflow: initial;
+  opacity: 0.5;
+}
+
+.partners__item.swiper-slide {
+  width: 200px;
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .partners__item.swiper-slide {
+    width: 112px;
+    height: 28px;
+  }
 }
 
 .solution {
@@ -2164,6 +2190,68 @@ button {
     top: -2px;
     transform: rotate(197deg);
   }
+}
+
+.reviews {
+  padding: 30px 0 55px;
+}
+@media screen and (max-width: 768px) {
+  .reviews {
+    padding: 30px 0 25px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__slider.swiper {
+  overflow: initial;
+  cursor: url("../img/tirez.png"), pointer;
+}
+
+.reviews__item.swiper-slide {
+  width: 331px;
+  height: 314px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid red;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item.swiper-slide {
+    width: 169.5px;
+    height: 160.8px;
+    border-radius: 7px;
+  }
+}
+
+.reviews__item.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.7);
+}
+
+.riviews__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  margin-top: 54px;
+  height: 1.5px;
+  top: initial;
+}
+@media screen and (max-width: 768px) {
+  .riviews__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    display: none;
+  }
+}
+
+.riviews__pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #131111;
 }
 
 .socials__list {
