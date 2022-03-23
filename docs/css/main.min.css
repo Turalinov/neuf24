@@ -534,6 +534,7 @@ img {
 }
 
 .container {
+  border: 1px solid red;
   margin: 0 auto;
   height: 100%;
   max-width: 1380px;
@@ -671,6 +672,104 @@ button {
   color: #1F2431;
 }
 
+.opening {
+  padding: 50px 0 50px;
+}
+@media screen and (max-width: 992px) {
+  .opening {
+    padding: 20px 0 20px;
+  }
+}
+
+.opening__title {
+  text-align: center;
+  max-width: 703px;
+  margin: 0 auto 60px;
+}
+@media screen and (max-width: 768px) {
+  .opening__title {
+    max-width: initial;
+    margin-bottom: 36px;
+  }
+}
+
+.opening__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -50px;
+}
+@media screen and (max-width: 768px) {
+  .opening__list {
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: -30px;
+  }
+}
+
+.opening__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(20% - 50px);
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .opening__item {
+    margin-left: 0px;
+    width: 50%;
+    margin-bottom: 31px;
+  }
+}
+.opening__item:last-child {
+  width: 182px;
+}
+
+.opening__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2431;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .opening__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.opening__icon-elem {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .opening__icon-elem {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.opening__text {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+@media screen and (max-width: 992px) {
+  .opening__text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .opening__text {
+    font-size: 14px;
+  }
+}
+
 .visit {
   padding: 160px 0 50px;
 }
@@ -743,11 +842,13 @@ button {
   }
 }
 
-.btn.btn--colored.visit__btn {
-  display: block;
-  width: 100%;
-  max-width: 278px;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .btn.btn--colored.visit__btn {
+    display: block;
+    width: 100%;
+    max-width: 278px;
+    margin: 0 auto;
+  }
 }
 
 .faq {
