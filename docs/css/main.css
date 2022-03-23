@@ -671,6 +671,85 @@ button {
   color: #1F2431;
 }
 
+.visit {
+  padding: 160px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .visit {
+    padding: 100px 0 25px;
+  }
+}
+
+.visit .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .visit .container {
+    flex-direction: column-reverse;
+  }
+}
+
+.visit__content {
+  max-width: 547px;
+}
+@media screen and (max-width: 768px) {
+  .visit__content {
+    max-width: initial;
+  }
+}
+
+.visit__img {
+  width: 681px;
+  height: 418px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .visit__img {
+    width: initial;
+    height: initial;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.visit__img-elem {
+  object-fit: cover;
+  width: 100%;
+}
+
+.visit__title.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .visit__title.title {
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+.visit__desc {
+  max-width: 423px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .visit__desc {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.btn.btn--colored.visit__btn {
+  display: block;
+  width: 100%;
+  max-width: 278px;
+  margin: 0 auto;
+}
+
 .faq {
   padding: 100px 0;
 }
@@ -899,6 +978,45 @@ button {
   z-index: 10;
   transition: background-color 0.8s;
 }
+.header.header--white {
+  background-color: white;
+  border-bottom: 1px solid #d4d4d4;
+}
+.header.header--white .message {
+  background-color: #EEFAFF;
+}
+.header.header--white .message .container {
+  color: #1F2431;
+}
+.header.header--white .message .container span {
+  color: #1F2431;
+}
+.header.header--white .menu__link {
+  color: #1F2431;
+}
+.header.header--white .menu__btn--non-bordered.btn {
+  background-color: transparent;
+}
+.header.header--white .menu__btn {
+  border: 1px solid #1F2431;
+  color: #1F2431;
+}
+.header.header--white.is-active {
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .header.header--white::before {
+    background: #ffffff;
+  }
+}
+.header.header--white .menu__toggle::before,
+.header.header--white .menu__toggle::after,
+.header.header--white .menu__toggle span {
+  background-color: #1F2431;
+}
+.header.header--white .menu__dropdown {
+  background-color: #ffffff;
+}
 @media screen and (max-width: 768px) {
   .header::before {
     content: "";
@@ -908,10 +1026,9 @@ button {
     width: 100%;
     height: 100%;
     background: #1F2431;
-    z-index: 30;
+    z-index: -1;
   }
 }
-
 .header.is-active {
   background-color: #1F2431;
 }
@@ -2282,6 +2399,7 @@ button {
 
 .message {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 40;
 }
 
 .message.is-hidden {
