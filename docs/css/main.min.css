@@ -2509,6 +2509,26 @@ button {
   justify-content: space-between;
   max-width: 924px;
 }
+@media screen and (max-width: 768px) {
+  .promotion .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promotion__title {
+    text-align: center;
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promotion__btn {
+    width: 100%;
+    max-width: 278px;
+    margin: 0 auto;
+  }
+}
 
 .reviews {
   padding: 30px 0 55px;
