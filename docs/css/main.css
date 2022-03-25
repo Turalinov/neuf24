@@ -1522,6 +1522,17 @@ button {
   margin-bottom: 20px;
   margin-top: 40px;
 }
+.visit__title.title .accent::before {
+  bottom: 9px;
+  width: 100%;
+  height: 21px;
+}
+@media screen and (max-width: 768px) {
+  .visit__title.title .accent::before {
+    bottom: 5px;
+    height: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .visit__title.title {
     margin-top: 0px;
