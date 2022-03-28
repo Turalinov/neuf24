@@ -614,6 +614,10 @@ img {
   box-sizing: content-box;
 }
 
+.accordion__content a {
+  color: #1F2431;
+}
+
 .open .accordion__content {
   color: #848484;
   opacity: 1;
@@ -4186,6 +4190,94 @@ button {
     top: -2px;
     transform: rotate(197deg);
   }
+}
+
+.politics {
+  position: relative;
+  padding: 160px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .politics {
+    padding: 85px 0 30px;
+  }
+}
+
+.politics__title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .politics__title {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .politics__title {
+    margin-bottom: 25px;
+  }
+}
+
+.politics__text h3,
+.politics__text h4 {
+  margin-bottom: 15px;
+}
+.politics__text h3:not(:first-child),
+.politics__text h4:not(:first-child) {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .politics__text p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .politics__text p {
+    font-size: 12px;
+  }
+}
+
+.politics__text p {
+  margin-top: 20px;
+}
+
+.politics__text a {
+  color: #1F2431;
+  text-decoration: underline;
+}
+
+.politics ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.politics ul > li {
+  list-style: disc;
+}
+
+.politics ul > li + li {
+  margin-top: 10px;
+}
+
+.politics table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.politics table,
+.politics th,
+.politics td {
+  border: 1px solid black;
+}
+
+.politics th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.politics th,
+.politics td {
+  padding: 5px;
 }
 
 .promotion {
