@@ -377,7 +377,7 @@ template {
 
 html,
 body {
-  height: 2000px;
+  height: 100%;
 }
 
 body {
@@ -554,6 +554,7 @@ img {
 }
 
 .accordion__control {
+  color: #1F2431;
   padding: 25px 0;
   width: 100%;
   display: flex;
@@ -706,7 +707,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .article__share-item + .article__share-item {
-    margin-bottom: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -1931,7 +1932,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .opening__title {
-    max-width: initial;
+    max-width: 256px;
     margin-bottom: 36px;
   }
 }
@@ -2013,11 +2014,11 @@ button {
   }
 }
 
-.visit {
+.visit, .blog {
   padding: 160px 0 50px;
 }
 @media screen and (max-width: 768px) {
-  .visit {
+  .visit, .blog {
     padding: 100px 0 25px;
   }
 }
@@ -2973,12 +2974,24 @@ button {
 }
 @media screen and (max-width: 768px) {
   .first-screen__bg {
-    width: 364.3333333333px;
-    height: 255.6666666667px;
+    display: none;
+  }
+}
+
+.first-screen__bg-mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .first-screen__bg-mob {
+    position: absolute;
+    width: 320px;
+    height: 257px;
+    display: block;
     top: initial;
     bottom: 0;
     left: initial;
     right: 0;
+    z-index: -1;
   }
 }
 
@@ -3050,8 +3063,10 @@ button {
 
 @media screen and (max-width: 768px) {
   .btn.btn--colored.free__btn {
+    display: block;
     max-width: 260px;
     width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -3820,6 +3835,7 @@ button {
 
 .modal__content {
   max-width: 545px;
+  min-width: 545px;
   border-radius: 15px;
   background-color: #ffffff;
   position: absolute;
@@ -3828,6 +3844,12 @@ button {
   transform: translate(-50%, -50%);
   padding: 40px 25px 30px;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .modal__content {
+    max-width: 400px;
+    min-width: 400px;
+  }
 }
 @media screen and (max-width: 768px) {
   .modal__content {
@@ -4282,9 +4304,17 @@ button {
   display: flex;
   justify-content: space-between;
   max-width: 924px;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .promotion .container {
+    margin: 0 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .promotion .container {
+    margin: 0 15px;
     flex-direction: column;
   }
 }
@@ -4496,6 +4526,12 @@ button {
   text-align: center;
   margin-bottom: 33px;
 }
+@media screen and (max-width: 768px) {
+  .profile__title {
+    max-width: 226px;
+    margin: 0 auto 33px;
+  }
+}
 
 .btn.profile__btn {
   max-width: 160px;
@@ -4540,16 +4576,21 @@ button {
 
 .reviews__item.swiper-slide {
   transition: 0.4s;
-  width: 331px;
-  height: 314px;
+  max-width: 331px;
+  max-height: 314px;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
   overflow: hidden;
+  border: 1px solid #eaeaea;
+  padding: 30px;
 }
 @media screen and (max-width: 768px) {
   .reviews__item.swiper-slide {
-    width: 169.5px;
-    height: 160.8px;
+    max-width: 250px;
+    max-height: 200px;
     border-radius: 7px;
+    padding: 20px;
   }
 }
 
@@ -4570,6 +4611,43 @@ button {
 
 .riviews__pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #131111;
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews__right {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+
+.reviews__author {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__author {
+    font-size: 16px;
+  }
+}
+
+.reviews__rating {
+  display: flex;
+}
+
+.reviews__rating img + img {
+  margin-left: 5px;
+}
+
+.reviews__desc {
+  margin-bottom: 20px;
 }
 
 .socials__list {
