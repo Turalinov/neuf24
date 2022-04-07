@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="invitation NEUF24" />
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>invitation NEUF24</title>
+  <style>
+.letter * {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.letter {
+font-family: Arial, serif;
+-webkit-text-size-adjust: none;
+width: 100%;
+max-width: 800px;
+height: 1130px;
+font-size: 19px;
+line-height: 1.2;
+color: #1f2431;
+background-color: #fff;
+padding-top: 26px;
+position: relative;
+z-index: 1;
+}
+@media (max-width: 565px) {
+.letter {
+font-size: 14px;
+max-height: initial;
+height: 905px;
+}
+}
+.letter::before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 232px;
+background-image: url("https://www.neuf24.fr/img/letter-top.png");
+background-repeat: no-repeat;
+background-position: center bottom;
+background-size: contain;
+z-index: 2;
+}
+@media (max-width: 565px) {
+.letter::before {
+height: 155px;
+}
+}
+@media (max-width: 565px) {
+.letter {
+padding-top: 11px;
+}
+}
+.letter img {
+display: block;
+max-width: 100%;
+height: 100%;
+border: 0;
+}
+.letter__container {
+margin: 0 50px 0 60px;
+height: 100%;
+max-width: 800px;
+}
+@media (max-width: 565px) {
+.letter__container {
+margin: 0 21px;
+}
+}
+.letter__logo {
+width: 170px;
+height: 55px;
+margin: 0 auto;
+margin-bottom: 37px;
+}
+@media (max-width: 565px) {
+.letter__logo {
+width: 113px;
+height: 28px;
+margin-bottom: 22px;
+}
+}
+.letter__content {
+padding: 48px 72px 60px 47px;
+border: 1px solid #1f2431;
+box-sizing: border-box;
+border-radius: 7px;
+max-width: 708px;
+width: 100%;
+position: relative;
+z-index: 1;
+}
+@media (max-width: 565px) {
+.letter__content {
+padding: 25px 25px 123px 25px;
+}
+}
+.letter__content::before {
+content: "";
+position: absolute;
+left: -19px;
+top: -27px;
+width: 100%;
+height: 100%;
+border: 1px solid #1f2431;
+opacity: 0.2;
+z-index: -1;
+}
+@media (max-width: 565px) {
+.letter__content::before {
+left: -11px;
+top: -9px;
+}
+}
+.letter__content p, .letter__content img {
+margin-bottom: 28px;
+}
+.letter__content .accent {
+position: relative;
+z-index: 1;
+}
+.letter__content .accent::before {
+content: "";
+position: absolute;
+height: 4px;
+width: 100%;
+bottom: 1px;
+z-index: -1;
+background-color: #86f2e7;
+}
+  </style>
+</head>
+
+
+
+<body>
+
+
+  <div class="letter">
+    <div class="letter__container">
+      <div class="letter__logo">
+        <img src="https://www.neuf24.fr/img/logo-white.svg" alt="NEUF24" class="letter__logo-elem">
+      </div>
+
+
+      <div class="letter__content">
+        <p><b>NEUF24</b> vous invite à la présentation officielle de son<br>
+          <span class="accent">espace neuf</span></p>
+
+
+        <p>Il s’agit bien de la révolution de <b>l’immobilier neuf…</b>
+          Mais nous n’en disons pas plus, car on en reparlera pendant la soirée pour fêter la naissance de ce projet 🥳
+        </p>
+
+        <p><span class="accent">
+          On vous propose de nous retrouver
+        </span></p>
+
+        <p>🗓 le 28 avril
+          🕠 à partir de 18:00,
+          📍 à 110 rue de Patay
+          🥂 à l’occasion d’un buffet convivial</p>
+
+          <img src="https://www.neuf24.fr/img/letter-map.png" alt="Letter Map" class="letter-map-elem" width="377"
+            height="249">
+
+          <p>Espérant vous voir lors de cette occasion,
+            merci de confirmer votre venue
+          </p>
+          <br>
+          <p>À très vite,<br>
+            Equipe NEUF24</p>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

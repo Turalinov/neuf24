@@ -769,11 +769,30 @@ img {
   }
 }
 
-.article__content p + p {
+.article__content ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .article__content ul {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.article__content ul li {
+  list-style: initial;
+}
+
+.article__content p + p,
+.article__content ul li + li {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  .article__content p + p {
+  .article__content p + p,
+.article__content ul li + li {
     margin-top: 15px;
   }
 }
@@ -1037,6 +1056,20 @@ button {
 }
 .btn--colored:hover {
   color: #1F2431;
+}
+
+.cabinet {
+  padding: 115px 0 50px;
+}
+@media screen and (max-width: 992px) {
+  .cabinet {
+    padding: 100px 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cabinet {
+    padding: 68px 0 25px;
+  }
 }
 
 .courses {
@@ -1702,7 +1735,7 @@ button {
   }
 }
 
-.experience__item.is-active {
+.experience__item:hover {
   background-color: #EEFAFF;
 }
 
@@ -2026,10 +2059,12 @@ button {
 .visit .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .visit .container {
     flex-direction: column-reverse;
+    align-items: initial;
   }
 }
 
@@ -2327,6 +2362,31 @@ button {
   color: #929292;
 }
 
+.header-cabinet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #1F2431;
+  padding: 23px 0;
+}
+@media screen and (max-width: 992px) {
+  .header-cabinet {
+    padding: 20px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-cabinet {
+    padding: 14px 0px;
+  }
+}
+
+.header-cabinet .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -2434,6 +2494,79 @@ button {
   display: block;
   width: 17px;
   height: 17px;
+}
+
+.individual {
+  padding: 50px 0 100px;
+}
+@media screen and (max-width: 992px) {
+  .individual {
+    padding: 30px 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .individual {
+    padding: 25px 0 50px;
+  }
+}
+
+.individual__wrap {
+  background-color: #EEFAFF;
+  border-radius: 20px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .individual__wrap {
+    padding: 38px 26px 32px;
+  }
+}
+
+.individual__icon {
+  width: 80px;
+  height: 80px;
+  background-color: #1F2431;
+  border-radius: 9px;
+  margin-bottom: 28px;
+  background-image: url("../img/individual.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .individual__icon {
+    width: 55px;
+    height: 55px;
+    background-size: 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+}
+
+.individual__title {
+  font-size: 45px;
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 768px) {
+  .individual__title {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+}
+
+.individual__desc {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .individual__desc {
+    font-size: 12px;
+  }
 }
 
 .link {
@@ -2964,8 +3097,13 @@ button {
   width: 1093px;
   height: 767px;
   top: 0px;
-  left: calc(50% - 300px);
+  left: calc(50% - 130px);
   z-index: -1;
+}
+@media screen and (max-width: 1590px) {
+  .first-screen__bg {
+    left: calc(50% - 300px);
+  }
 }
 @media screen and (max-width: 1040px) {
   .first-screen__bg {
@@ -2981,11 +3119,10 @@ button {
 .first-screen__bg-mob {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .first-screen__bg-mob {
     position: absolute;
-    width: 320px;
-    height: 257px;
+    width: 100%;
     display: block;
     top: initial;
     bottom: 0;
@@ -2993,6 +3130,11 @@ button {
     right: 0;
     z-index: -1;
   }
+}
+
+.first-screen__bg-mob-elem {
+  margin-left: auto;
+  width: 100%;
 }
 
 .first-screen__play {
@@ -3441,7 +3583,6 @@ button {
 
 .partners__slider.swiper {
   overflow: initial;
-  opacity: 0.5;
 }
 
 .partners__item.swiper-slide {
@@ -3768,6 +3909,7 @@ button {
 }
 
 .message {
+  display: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 40;
 }
@@ -3820,7 +3962,7 @@ button {
 }
 
 .modal {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(31, 36, 49, 0.7);
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -3854,7 +3996,7 @@ button {
 @media screen and (max-width: 768px) {
   .modal__content {
     max-width: 280px;
-    width: 100%;
+    min-width: 280px;
     padding: 20px;
   }
 }
