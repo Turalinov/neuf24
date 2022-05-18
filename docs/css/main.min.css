@@ -841,6 +841,11 @@ img {
 .article__interesting {
   margin-top: 60px;
 }
+@media screen and (max-width: 768px) {
+  .article__interesting {
+    margin-top: 45px;
+  }
+}
 
 /* slider */
 .article__slider {
@@ -2657,6 +2662,18 @@ button {
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  .interesting__header {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .interesting__header {
+    font-size: 20px;
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
 }
 
 .link {
@@ -4869,6 +4886,13 @@ button {
 
 .reaction__item + .reaction__item {
   margin-left: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .reaction__img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .reviews {
