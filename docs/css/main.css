@@ -444,7 +444,7 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -658,7 +658,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .article {
-    padding: 115px 0 25px;
+    padding: 88px 0 25px;
   }
 }
 
@@ -702,7 +702,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .article__desc {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 15px;
   }
 }
@@ -714,6 +714,11 @@ img {
 .article__links-text {
   margin-right: 10px;
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .article__links-text {
+    display: none;
+  }
 }
 
 .article__share {
@@ -785,11 +790,22 @@ img {
 }
 
 .article__content {
+  text-align: justify;
   font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   .article__content {
     font-size: 12px;
+  }
+}
+
+.article__accent {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .article__accent {
+    font-size: 16px;
   }
 }
 
@@ -1056,6 +1072,11 @@ img {
   font-size: 14px;
   margin-top: -10px;
 }
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 12px;
+  }
+}
 
 .breadcrumbs__list {
   display: flex;
@@ -1066,6 +1087,11 @@ img {
   position: relative;
   margin-top: 10px;
   padding-right: 32px;
+}
+@media screen and (max-width: 768px) {
+  .breadcrumbs__item {
+    padding-right: 30px;
+  }
 }
 .breadcrumbs__item::after {
   content: "→";
@@ -4876,6 +4902,11 @@ button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 400;
   color: #929292;
+}
+@media screen and (max-width: 768px) {
+  .publication__additional {
+    font-size: 12px;
+  }
 }
 
 .reaction {
