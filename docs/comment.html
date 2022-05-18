@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <title>Comment réussir son achat dans le neuf ?</title>
+  <script>
+    window.axeptioSettings = {
+      clientId: "6250047e74fca0c0bb7bd7c5",
+      cookiesVersion: "neuf24-fr",
+    };
+
+    (function (d, s) {
+      var t = d.getElementsByTagName(s)[0],
+        e = d.createElement(s);
+      e.async = true;
+      e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
+
 </head>
 
 
@@ -16,7 +31,7 @@
   <div class="wrapper">
     <div class="wrapper__content wrapper__content--direction">
       <main>
-        <header class="header header--white">
+        <header class="header header--white _anim-items">
   <section class="message">
   <div class="container">
     <div class="message__desc">La prochaine visite guidée gratuite aura lieu le 9 avril
@@ -66,13 +81,13 @@
         </div>
         <div class="menu__socials socials">
           <ul class="socials__list">
-            <li class="socials__item">
+            <!-- <li class="socials__item">
               <a href="#" class="socials__link">
                 <svg class="socials__icon" viewBox="0 0 20 20">
                   <use xlink:href="img/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
             <li class="socials__item">
               <a href="#" class="socials__link">
                 <svg class="socials__icon" viewBox="0 0 20 20">
@@ -80,7 +95,7 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item">
+            <!-- <li class="socials__item">
               <a href="#" class="socials__link">
                 <svg class="socials__icon" viewBox="0 0 20 20">
                   <use xlink:href="img/icons/sprite.svg#facebook"></use>
@@ -93,9 +108,9 @@
                   <use xlink:href="img/icons/sprite.svg#youtube"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
             <li class="socials__item">
-              <a href="#" class="socials__link">
+              <a href="https://www.instagram.com/neuf24.fr/" class="socials__link">
                 <svg class="socials__icon" viewBox="0 0 20 20">
                   <use xlink:href="img/icons/sprite.svg#instagram"></use>
                 </svg>
@@ -119,33 +134,65 @@
 
         <article class="article">
   <div class="container container-content">
-    <time datetime="" class="article__date">1 mars 2022</time>
+
+    <nav class="article__breadcrumbs breadcrumbs ">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Blog</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Conférence</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--unactive">Titre de l’article</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="article__publication publication">
+      <div class="publication__avatar">
+        <img src="img/author.png" alt="avatar" class="publication__avatar-img">
+      </div>
+      <div class="publication__info">
+        <div class="publication__author">
+          <span>Alexandre</span> - <span>Expert Immo</span>
+        </div>
+        <div class="publication__additional">
+          <span class="publication__date">3 mai, 2022</span> · <span>7</span> mins de lecture
+        </div>
+      </div>
+    </div>
 
     <h1 class="article__title">
       Comment réussir son achat dans le neuf ?
     </h1>
 
     <div class="article__desc">
-      NEUF24 vous donne 3 éléments indispensables pour réussir votre achat dans l’immobilier neuf.
+      NEUF24 vous donne 3 éléments indispensables pour réussir votre achat dans l’immobilier
+      neuf.
     </div>
 
-    <ul class="article__share">
-      <li class="article__share-item">
-        <a href="#" class="article__share-link">
-          <img src="img/facebook.svg" alt="facebook" class="article__share-link-img">
-        </a>
-      <!-- </li>
-      <li class="article__share-item">
-        <a href="#" class="article__share-link">
-          <img src="img/twitter.svg" alt="twitter" class="article__share-link-img">
-        </a>
-      </li> -->
-      <li class="article__share-item">
-        <a href="#" class="article__share-link">
-          <img src="img/link.svg" alt="link" class="article__share-link-img">
-        </a>
-      </li>
-    </ul>
+    <div class="article__links">
+      <div class="article__links-text">Partager l’article</div>
+      <ul class="article__share">
+        <li class="article__share-item">
+          <a href="#" class="article__share-link">
+            <img src="img/facebook.svg" alt="facebook" class="article__share-link-img">
+          </a>
+        <!-- </li>
+        <li class="article__share-item">
+          <a href="#" class="article__share-link">
+            <img src="img/twitter.svg" alt="twitter" class="article__share-link-img">
+          </a>
+        </li> -->
+        <li class="article__share-item">
+          <a href="#" class="article__share-link">
+            <img src="img/link.svg" alt="link" class="article__share-link-img">
+          </a>
+        </li>
+      </ul>
+    </div>
+
 
   </div>
 
@@ -175,7 +222,8 @@
 
       <p>
         <b>
-          1. La première étape indispensable est de définir clairement ses critères de recherche et la faisabilité de
+          👨‍💻 La première étape indispensable est de définir clairement ses critères de recherche et la faisabilité
+          de
           son projet avec un expert.
         </b> Avant de vous projeter sur un bien, il est important de savoir si votre projet est
         “réalisable” sur le plan financier. Posez-vous les questions suivantes : ai-je une idée de mon budget ? Est-ce
@@ -189,7 +237,8 @@
       </p>
 
       <p>
-        <b>2. Il est ensuite primordial de bien comprendre les spécificités d’un achat de VEFA.</b> L’immobilier neuf
+        <b>Il est ensuite primordial de bien comprendre les spécificités d’un achat de <span
+            class="green">VEFA</span>.</b> L’immobilier neuf
         présente
         de
         nombreux avantages, notamment au niveau des garanties de construction et des normes qui assurent une des
@@ -211,7 +260,7 @@
       </p>
 
       <p>
-        <b>3. Enfin, il faut garder en tête que les opportunités sont limitées !</b> Le marché de l’immobilier est très
+        <b>🕧 Enfin, il faut garder en tête que les opportunités sont limitées !</b> Le marché de l’immobilier est très
         demandeur, et
         les programmes d’immobilier neuf sont particulièrement prisés. Si une opportunité vous paraît intéressante,
         soyez
@@ -230,6 +279,34 @@
 
       </p>
 
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="article__interesting interesting">
+      <div class="interesting__header">
+        Cet article était-il intéressant?
+      </div>
+      <ul class="interesting__reaction reaction">
+        <li class="reaction__item">
+          <a href="#" class="reaction__link">
+            <img src="img/thumbs_up.png" alt="face_without_mouth" class="reaction__img" width="36" height="36"
+              data-id="2">
+          </a>
+        </li>
+        <li class="reaction__item">
+          <a href="#" class="reaction__link">
+            <img src="img/face_without_mouth.png" alt="face_without_mouth" class="reaction__img" width="36"
+              height="36" data-id="2">
+          </a>
+        </li>
+        <li class="reaction__item">
+          <a href="#" class="reaction__link">
+            <img src="img/thumbs_down.png" alt="face_without_mouth" class="reaction__img" width="36" height="36"
+              data-id="2">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -384,11 +461,11 @@
 
           <ul class="footer__nav-content">
             <li class="footer__nav-content-item">
-              <a href="#" class="footer__nav-content-link add-btn">Rejoindre l’équipe
+              <a href="#" class="footer__nav-content-link join-btn">Rejoindre l’équipe
               </a>
             </li>
             <li class="footer__nav-content-item">
-              <a href="#" class="footer__nav-content-link add-btn">
+              <a href="#" class="footer__nav-content-link partner-btn">
                 Devenir partenaire
               </a>
             </li>
@@ -444,13 +521,13 @@
               </svg>
             </a>
           </li>
-          <li class="socials__item">
+          <!-- <li class="socials__item">
             <a href="https://www.facebook.com/simpleo.immobilier/" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
                 <use xlink:href="img/icons/sprite.svg#facebook"></use>
               </svg>
             </a>
-          </li>
+          </li> -->
           <!-- <li class="socials__item">
             <a href="#" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
@@ -459,7 +536,7 @@
             </a>
           </li> -->
           <li class="socials__item">
-            <a href="https://instagram.com/simpleo_immobilier_?utm_medium=copy_link" class="socials__link">
+            <a href="https://www.instagram.com/neuf24.fr/" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
                 <use xlink:href="img/icons/sprite.svg#instagram"></use>
               </svg>

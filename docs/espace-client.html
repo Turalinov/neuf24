@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <title>Espace client</title>
+  <script>
+    window.axeptioSettings = {
+      clientId: "6250047e74fca0c0bb7bd7c5",
+      cookiesVersion: "neuf24-fr",
+    };
+
+    (function (d, s) {
+      var t = d.getElementsByTagName(s)[0],
+        e = d.createElement(s);
+      e.async = true;
+      e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
+
 </head>
 
 
@@ -53,10 +68,13 @@
       <div class="individual__icon">
       </div>
       <h2 class="individual__title">
-        Sur mesure
+        Une question ? Besoin d’aide?
+        <!-- Sur mesure -->
       </h2>
       <div class="individual__desc">
-        Suivant la sélection réalisée avec nos experts, nous pouvons organiser une visiste sur-mesure
+        Nos experts sont disponibles pour échanger en direct avec vous.<br>
+        Par mail : <a style="color: #1F2431;" href="mailto:contact@neuf24.fr">contact@neuf24.fr</a><br>
+        Par téléphone : <a style="color: #1F2431;" href="tel:01 84 60 10 05">01 84 60 10 05</a><br>
       </div>
     </div>
   </div>
@@ -130,11 +148,11 @@
 
           <ul class="footer__nav-content">
             <li class="footer__nav-content-item">
-              <a href="#" class="footer__nav-content-link add-btn">Rejoindre l’équipe
+              <a href="#" class="footer__nav-content-link join-btn">Rejoindre l’équipe
               </a>
             </li>
             <li class="footer__nav-content-item">
-              <a href="#" class="footer__nav-content-link add-btn">
+              <a href="#" class="footer__nav-content-link partner-btn">
                 Devenir partenaire
               </a>
             </li>
@@ -190,13 +208,13 @@
               </svg>
             </a>
           </li>
-          <li class="socials__item">
+          <!-- <li class="socials__item">
             <a href="https://www.facebook.com/simpleo.immobilier/" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
                 <use xlink:href="img/icons/sprite.svg#facebook"></use>
               </svg>
             </a>
-          </li>
+          </li> -->
           <!-- <li class="socials__item">
             <a href="#" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
@@ -205,7 +223,7 @@
             </a>
           </li> -->
           <li class="socials__item">
-            <a href="https://instagram.com/simpleo_immobilier_?utm_medium=copy_link" class="socials__link">
+            <a href="https://www.instagram.com/neuf24.fr/" class="socials__link">
               <svg class="socials__icon" viewBox="0 0 20 20">
                 <use xlink:href="img/icons/sprite.svg#instagram"></use>
               </svg>
