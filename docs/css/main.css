@@ -1207,7 +1207,7 @@ button {
 
 .custom-select__item {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   width: 95%;
 }
 
