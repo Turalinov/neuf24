@@ -1021,10 +1021,41 @@ img {
 .pagination__prev:hover, .pagination__next:hover {
   color: #86F2E7;
 }
+.pagination__prev:hover::before, .pagination__next:hover::before {
+  opacity: 0.4;
+}
+.pagination__prev::before, .pagination__next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity 0.3s;
+}
 @media screen and (max-width: 768px) {
   .pagination__prev, .pagination__next {
     display: none;
   }
+}
+
+.pagination__prev {
+  padding-left: 24px;
+}
+.pagination__prev::before {
+  left: 0;
+  background-image: url("../img/pagination__arrow-left.svg");
+}
+
+.pagination__next {
+  padding-right: 24px;
+}
+.pagination__next::before {
+  right: 0;
+  background-image: url("../img/pagination__arrow-right.svg");
 }
 
 .pagination__list {
