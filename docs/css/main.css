@@ -3103,6 +3103,23 @@ button {
   }
 }
 
+.mailing-list__input.error {
+  border: 1px solid #ff8585;
+  animation: bounceError 2s infinite;
+}
+
+/* The animation code */
+@keyframes bounceError {
+  0% {
+    border-color: #ff8585;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #ff8585;
+  }
+}
 .mailing-list__btn {
   color: #ffffff;
 }
