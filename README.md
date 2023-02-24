@@ -1,2 +1,2 @@
 # neuf24
-L’immobilier neuf, comme vous ne l’avez jamais vu [Link](https://turalinov.github.io/neuf24/ "Link")
+New property like you've never seen it [Go to project](https://turalinov.github.io/neuf24/ "Link")
